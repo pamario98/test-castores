@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Examen Castores</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="shortcut icon" href="#">
+  </head>
+
+  <body>
+    <h1>Noticias-Notas</h1>
+<div id="">
+    <form align="center">
+      <div class="mb-3">
+        <label for="" class="form-label">ID del Usuario</label>
+        <input
+          type=""
+          class="form-control"
+          id="_idusuario"
+          aria-describedby=""
+        />
+      </div>
+
+      <div class="mb-3">
+        <label for="" class="form-label">Titulo</label>
+        <input
+          type=""
+          class="form-control"
+          id="_titulo"
+          aria-describedby=""
+        />
+      </div>
+
+
+      <div class="mb-3">
+        <label for="" class="form-label"
+          >Descripcion</label
+        >
+        <textarea
+          class="form-control"
+          id="_descripcion"
+          rows="3"
+        ></textarea>
+      </div>
+      <button onclick="crear()" type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+  </div>
+
+    <h1>Consulta de noticias o Notas</h1>
+
+    <div>
+      <table id="tablaNoticias" class="table">
+        <thead>
+          <tr>
+            <th scope="col">ID NOTA</th>
+            <th scope="col">ID USUARIO</th>
+            <th scope="col">DESCRIPCION</th>
+            <th scope="col">TITULO</th>
+            <th scope="col">FECHA</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+
+      <button onclick="traernotas()" type="submit" class="btn btn-primary">Traer Notas</button>
+    </div>
+
+    <h1>Comentarios y Respuestas</h1>
+
+    <div>
+      <table id="tablaComentarios" class="table">
+        <thead>
+          <tr>
+            <th scope="col">ID COMENTARIO</th>
+            <th scope="col">COMENTARIO</th>
+            <th scope="col">ID NOTA</th>
+            <th scope="col">ID USUARIO</th>
+            <th scope="col">FECHA</th>
+            <th scope="col">ID COMENTARIO RESPUESTA</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+
+      <button onclick="traercomentario()" type="submit" class="btn btn-primary">Traer Comentarios</button>
+    </div>
+
+
+
+
+<script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.22/js/dataTables.bootstrap5.min.js"></script>   
+
+
+    <script>
+ 
+ </script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+      integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./js/client.js"></script>
+  </body>
+</html>
